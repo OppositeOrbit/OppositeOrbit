@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Opposite Orbit | Indie Game Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0d0d0f;
+      color: #e6e6e6;
+    }
+
+    header {
+	  text-align: center;
+	  padding: 6rem 1rem;
+	  background: url('https://i.ibb.co/XZ3RYwCR/IMG-20250118-204041.jpg') center/contain no-repeat;
+	  color: #ffffff;
+	  position: relative;
+	}
+
+	header::after {
+	  content: "";
+	  position: absolute;
+	  inset: 0;
+	  background: rgba(0,0,0,0.55); /* dark overlay for readability */
+	}
+	header h1, header p {
+	  position: relative;
+	  z-index: 1;
+	}
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      text-align: center;
+      padding: 1rem;
+      background: #111;
+    }
+
+    nav a {
+      color: #e6e6e6;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #7fc8ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      border-left: 4px solid #7fc8ff;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .game-card {
+      background: #1a1a1d;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+	
+	
+	.survivor-layout {
+	  display: flex;
+	  gap: 1.5rem;
+	  background: #1a1a1d;
+	  border-radius: 8px;
+	  padding: 1rem;
+	}
+
+	.survivor-image {
+	  width: 40%;
+	  min-height: 220px;
+	  background: url('https://play-lh.googleusercontent.com/3TGZ_iyZskizmF4434joYc9GNCScfEJYgRuAHrWRgBIryQ-j_CWCNxFo0ROYYWbqVfBIju2_D7zS1M9gQowp=w5120-h2880-rw') center/contain no-repeat;
+	  border-radius: 8px;
+	}
+
+	.survivor-text {
+	  width: 60%;
+	  color: #fff;
+	}
+
+	.blocklock-image {
+	  width: 40%;
+	  min-height: 220px;
+	  background: url('https://play-lh.googleusercontent.com/7I5nA_Ui-5dg3TVUzfQNiv2L13CL8m_luRqzunwp25h12RxtLR7BHK-M2VUr7B19RqiBMriauK3QKz7yG1Sp=w5120-h2880-rw') center/contain no-repeat;
+	  border-radius: 8px;
+	}
+	
+	.dodgycarrot-image {
+	  width: 40%;
+	  min-height: 220px;
+	  background: url('https://play-lh.googleusercontent.com/T0iV9lnY_XGnr5-JuwvgFMn4qWLVfSF4ptcUV6waGiX8Aw3DJjGHGSZ7blYS_aQ1RFHUX4kDXrg9I1WMANJusg=w5120-h2880-rw') center/contain no-repeat;
+	  border-radius: 8px;
+	}
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #111;
+      color: #888;
+      margin-top: 3rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Opposite Orbit</h1>
+    <p>Indie Game Developer</p>
+  </header>
+
+
+  <nav>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+    <a href="#contact">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="games">
+      <h2>Games</h2>
+		  <div class="game-card survivor-layout">
+			  <div class="survivor-image"></div>
+
+			  <div class="survivor-text">
+				<h3>Survivor Reborn</h3>
+
+				<p>There's only one thing running through that poor person's mind...<br>
+				<strong>Just don't die!!</strong></p>
+
+				<p>Inexplicably you find yourself stranded on a floating pile of crates, unable to escape to dry land
+				with not a lot to protect your modesty or defend yourself with. It seems everything is out to get you
+				as you fight for survival.
+				</p>
+
+				<p>Keep on building your raft as it comes under endless bombardment by pushing and pulling crates and
+				see how long you can survive!
+				</p>
+
+				<p>Survivor Reborn features both Classic and Expert modes in both single and local multiplayer modes!
+				</p>
+
+				<p>
+					<a href="https://play.google.com/store/apps/details?id=com.oppositeorbit.survivorreborn"
+					style="color:#7fc8ff; font-weight:bold; text-decoration:none;">
+					▶ Download on Google Play
+					</a>
+				</p>
+				</div>
+			</div>
+			
+			<div class="game-card survivor-layout">
+			  <div class="blocklock-image"></div>
+
+			  <div class="survivor-text">
+				<h3>Block Lock</h3>
+
+				<p>Slide across each puzzle to reduce all the blocks to zero, and for an extra challenge see if you can finish on the bonus star block!</p>
+
+				<p>Just swipe your finger in the direction you want to move the rainbow square in this completely free to play puzzle challenge!
+				</p>
+
+				<p>As well as the main puzzles "Block Lock" features an infinity level which randomly generates on each play giving you unlimited puzzles to solve!
+				</p>
+
+				<p>
+					<a href="https://play.google.com/store/apps/details?id=com.oppositeorbit.blocklock"
+					style="color:#7fc8ff; font-weight:bold; text-decoration:none;">
+					▶ Download on Google Play
+					</a>
+				</p>
+				</div>
+			</div>
+			
+			<div class="game-card survivor-layout">
+			  <div class="dodgycarrot-image"></div>
+
+			  <div class="survivor-text">
+				<h3>Dodgy Carrot</h3>
+
+				<p>Simple to play but challenging to master, how high can you make your carrot fly in this endless hazard dodging game?
+				</p>
+
+				<p>Keep flying to unlock new carrot characters and push your dodgy reflexes to the limit, while unlocking achievements along the way!
+				</p>
+
+				<p>Google play leaderboard integration means you can prove you're the dodgiest carrot out there, simply pick up and play when you've got a couple of minutes to burn!
+				</p>
+
+				<p>
+					<a href="https://play.google.com/store/apps/details?id=com.dodgycarrot.dodgy_carrot"
+					style="color:#7fc8ff; font-weight:bold; text-decoration:none;">
+					▶ Download on Google Play
+					</a>
+				</p>
+				</div>
+			</div>
+	</section>
+
+
+    <section id="about">
+      <h2>About Opposite Orbit</h2>
+      <p>Opposite Orbit is an indie game developer based in the UK, releasing games on to Android via Google Play Games.</p>
+    </section>
+
+    <section id="privacy">
+  <h2>Privacy</h2>
+  <p>
+    Opposite Orbit is committed to protecting player data and being transparent about how
+    information is handled across all our games.
+  </p>
+
+  <p>
+    You can read the full privacy policies for our games here:
+  </p>
+
+  <p>
+	  <a href="privacy_policy_block_lock.html"
+		 style="color:#7fc8ff; font-weight:bold; text-decoration:none;">
+		 View Block Lock Privacy Policy
+	  </a>
+	</p>
+	
+	<p>
+	  <a href="privacy_policy_dodgy_carrot.html"
+		 style="color:#7fc8ff; font-weight:bold; text-decoration:none;">
+		 View Dodgy Carrot Privacy Policy
+	  </a>
+	</p>
+	
+	<p>
+	  <a href="privacy_policy_survivor_reborn.html"
+		 style="color:#7fc8ff; font-weight:bold; text-decoration:none;">
+		 View Survivor Reborn Privacy Policy
+	  </a>
+	</p>
+	
+	
+</section>
+
+
+<section id="contact">
+      <h2>Contact</h2>
+      <p>For collaboration, press, or general enquiries:</p>
+      <p>Email: <strong>oppositeorbit@gmail.com</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Opposite Orbit — All Rights Reserved</p>
+  </footer>
+</body>
+</html>
